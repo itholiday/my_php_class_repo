@@ -25,7 +25,7 @@ class MyPDO{
         }
     }
 	private function __clone(){}
-	public function getInstance($config){
+	public static function getInstance($config){
 		if(self::$instance == null){
 			return self::$instance = new self($config);
 		}

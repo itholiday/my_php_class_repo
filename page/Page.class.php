@@ -216,3 +216,6 @@
       }
     }
   }
+    header('content-type:text/html;charset=utf8');
+    $page = new Page(150,10);
+    echo $page->fpage();
